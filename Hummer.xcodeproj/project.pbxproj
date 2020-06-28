@@ -1,0 +1,1401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1468F822BB756F0088B04A /* HMJSClassDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14685D22BB756F0088B04A /* HMJSClassDef.h */; };
+		0A1468F922BB756F0088B04A /* HMJSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14685E22BB756F0088B04A /* HMJSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A1468FA22BB756F0088B04A /* NSObject+Hummer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14685F22BB756F0088B04A /* NSObject+Hummer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A1468FB22BB756F0088B04A /* HMBuiltinScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686022BB756F0088B04A /* HMBuiltinScript.m */; };
+		0A1468FC22BB756F0088B04A /* HMJSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686122BB756F0088B04A /* HMJSContext.m */; };
+		0A1468FD22BB756F0088B04A /* HMGlobalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686222BB756F0088B04A /* HMGlobalObject.m */; };
+		0A1468FE22BB756F0088B04A /* JSValue+Hummer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686322BB756F0088B04A /* JSValue+Hummer.m */; };
+		0A1468FF22BB756F0088B04A /* NSObject+Hummer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686422BB756F0088B04A /* NSObject+Hummer.m */; };
+		0A14690022BB756F0088B04A /* HMJSClassDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686522BB756F0088B04A /* HMJSClassDef.m */; };
+		0A14690122BB756F0088B04A /* HMBuiltinScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14686622BB756F0088B04A /* HMBuiltinScript.h */; };
+		0A14690222BB756F0088B04A /* HMJSContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14686722BB756F0088B04A /* HMJSContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14690322BB756F0088B04A /* JSValue+Hummer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14686822BB756F0088B04A /* JSValue+Hummer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14690422BB756F0088B04A /* HMGlobalObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14686922BB756F0088B04A /* HMGlobalObject.h */; };
+		0A14690522BB756F0088B04A /* HMYogaConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686B22BB756F0088B04A /* HMYogaConfig.m */; };
+		0A14690622BB756F0088B04A /* HMDomNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14686C22BB756F0088B04A /* HMDomNode.h */; };
+		0A14690722BB756F0088B04A /* HMYogaConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14686D22BB756F0088B04A /* HMYogaConfig.h */; };
+		0A14690822BB756F0088B04A /* HMDomNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14686E22BB756F0088B04A /* HMDomNode.m */; };
+		0A14690922BB756F0088B04A /* HMAttrManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14687022BB756F0088B04A /* HMAttrManager.h */; };
+		0A14690A22BB756F0088B04A /* HMClassManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14687122BB756F0088B04A /* HMClassManager.h */; };
+		0A14690B22BB756F0088B04A /* HMExportManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14687222BB756F0088B04A /* HMExportManager.m */; };
+		0A14690C22BB756F0088B04A /* HMAttrManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14687322BB756F0088B04A /* HMAttrManager.m */; };
+		0A14690D22BB756F0088B04A /* HMClassManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14687422BB756F0088B04A /* HMClassManager.m */; };
+		0A14690E22BB756F0088B04A /* HMExportManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14687522BB756F0088B04A /* HMExportManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14690F22BB756F0088B04A /* HMInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14687722BB756F0088B04A /* HMInvocation.h */; };
+		0A14691022BB756F0088B04A /* HMExportMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14687822BB756F0088B04A /* HMExportMethod.m */; };
+		0A14691122BB756F0088B04A /* HMExportProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14687922BB756F0088B04A /* HMExportProperty.m */; };
+		0A14691222BB756F0088B04A /* HMExportClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14687A22BB756F0088B04A /* HMExportClass.m */; };
+		0A14691322BB756F0088B04A /* HMInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14687B22BB756F0088B04A /* HMInvocation.m */; };
+		0A14691422BB756F0088B04A /* HMExportProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14687C22BB756F0088B04A /* HMExportProperty.h */; };
+		0A14691522BB756F0088B04A /* HMExportMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14687D22BB756F0088B04A /* HMExportMethod.h */; };
+		0A14691622BB756F0088B04A /* HMExportClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14687E22BB756F0088B04A /* HMExportClass.h */; };
+		0A14691722BB756F0088B04A /* HMConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14688022BB756F0088B04A /* HMConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14691D22BB756F0088B04A /* HMUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14688622BB756F0088B04A /* HMUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14691E22BB756F0088B04A /* HMConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14688722BB756F0088B04A /* HMConverter.m */; };
+		0A14691F22BB756F0088B04A /* HMConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14688822BB756F0088B04A /* HMConfigure.m */; };
+		0A14692322BB756F0088B04A /* HMConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14688C22BB756F0088B04A /* HMConverter.h */; };
+		0A14692422BB756F0088B04A /* HMUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14688D22BB756F0088B04A /* HMUtility.m */; };
+		0A14692722BB756F0088B04A /* Hummer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A14689122BB756F0088B04A /* Hummer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14692822BB756F0088B04A /* Hummer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14689222BB756F0088B04A /* Hummer.m */; };
+		0A14695F22BB756F0088B04A /* HMTapEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468DD22BB756F0088B04A /* HMTapEvent.h */; };
+		0A14696022BB756F0088B04A /* HMLongPressEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468DE22BB756F0088B04A /* HMLongPressEvent.m */; };
+		0A14696122BB756F0088B04A /* HMPanEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468DF22BB756F0088B04A /* HMPanEvent.m */; };
+		0A14696222BB756F0088B04A /* HMPinchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468E022BB756F0088B04A /* HMPinchEvent.m */; };
+		0A14696322BB756F0088B04A /* HMSwipeEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468E122BB756F0088B04A /* HMSwipeEvent.h */; };
+		0A14696422BB756F0088B04A /* HMPanEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468E222BB756F0088B04A /* HMPanEvent.h */; };
+		0A14696522BB756F0088B04A /* HMLongPressEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468E322BB756F0088B04A /* HMLongPressEvent.h */; };
+		0A14696622BB756F0088B04A /* HMTapEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468E422BB756F0088B04A /* HMTapEvent.m */; };
+		0A14696722BB756F0088B04A /* HMSwipeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468E522BB756F0088B04A /* HMSwipeEvent.m */; };
+		0A14696822BB756F0088B04A /* HMPinchEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468E622BB756F0088B04A /* HMPinchEvent.h */; };
+		0A14696922BB756F0088B04A /* HMScrollEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468E822BB756F0088B04A /* HMScrollEvent.m */; };
+		0A14696A22BB756F0088B04A /* HMSwitchEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468E922BB756F0088B04A /* HMSwitchEvent.h */; };
+		0A14696B22BB756F0088B04A /* HMInputEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468EA22BB756F0088B04A /* HMInputEvent.m */; };
+		0A14696C22BB756F0088B04A /* HMSwitchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468EB22BB756F0088B04A /* HMSwitchEvent.m */; };
+		0A14696D22BB756F0088B04A /* HMScrollEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468EC22BB756F0088B04A /* HMScrollEvent.h */; };
+		0A14696E22BB756F0088B04A /* HMInputEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468ED22BB756F0088B04A /* HMInputEvent.h */; };
+		0A14696F22BB756F0088B04A /* HMBaseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468EF22BB756F0088B04A /* HMBaseEvent.m */; };
+		0A14697022BB756F0088B04A /* HMBaseEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468F022BB756F0088B04A /* HMBaseEvent.h */; };
+		0A14697122BB756F0088B04A /* HMNetworkProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468F222BB756F0088B04A /* HMNetworkProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14697222BB756F0088B04A /* HMInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1468F322BB756F0088B04A /* HMInterceptor.m */; };
+		0A14697322BB756F0088B04A /* HMReporterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468F422BB756F0088B04A /* HMReporterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14697522BB756F0088B04A /* HMWebImageProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468F622BB756F0088B04A /* HMWebImageProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A14697622BB756F0088B04A /* HMInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1468F722BB756F0088B04A /* HMInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3917FE652178734D006B1A1E /* Hummer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CE1B6020A53C04003E3E4F /* Hummer.framework */; };
+		39820A7F22855B9E00B0623E /* LogInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 39820A7E22855B9E00B0623E /* LogInterceptor.m */; };
+		39FF84A2217DF04B005646E0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A098472160BB0C00D3D812 /* libc++.tbd */; };
+		49226D666C14B8DEBD189978 /* libPods-Hummer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF3FD730A1FAD574225209E5 /* libPods-Hummer.a */; };
+		51F0375C7CEE9B943148E7B5 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D29B73332DFC90916DF0D1 /* libPods-Demo.a */; };
+		5658B35922D5CCAD00543169 /* HummerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658B35822D5CCAD00543169 /* HummerTests.m */; };
+		5658B35B22D5CCAD00543169 /* Hummer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CE1B6020A53C04003E3E4F /* Hummer.framework */; };
+		5658B36222D5CF5100543169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5658B36122D5CF5100543169 /* Assets.xcassets */; };
+		5665A61222DC27FD003A50FA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A098472160BB0C00D3D812 /* libc++.tbd */; };
+		5665A61422DC29EE003A50FA /* HMConverterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5665A61322DC29EE003A50FA /* HMConverterTest.m */; };
+		5F0BAB59ECEC708F30F791D9 /* libPods-HummerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA9D12722BB723F00FA9ADE /* libPods-HummerTests.a */; };
+		772595A623262E7200F125D7 /* HMSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7725958A23262E7100F125D7 /* HMSwitch.m */; };
+		772595A723262E7200F125D7 /* HMSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7725958B23262E7100F125D7 /* HMSwitch.h */; };
+		772595A823262E7200F125D7 /* HMLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7725958D23262E7100F125D7 /* HMLabel.h */; };
+		772595A923262E7200F125D7 /* HMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7725958E23262E7100F125D7 /* HMLabel.m */; };
+		772595AA23262E7200F125D7 /* HMImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7725959023262E7100F125D7 /* HMImageView.m */; };
+		772595AB23262E7200F125D7 /* HMImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7725959123262E7100F125D7 /* HMImageView.h */; };
+		772595AC23262E7200F125D7 /* HMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7725959323262E7100F125D7 /* HMButton.m */; };
+		772595AD23262E7200F125D7 /* HMButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7725959423262E7100F125D7 /* HMButton.h */; };
+		772595AE23262E7200F125D7 /* HMTextArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 7725959623262E7100F125D7 /* HMTextArea.m */; };
+		772595AF23262E7200F125D7 /* HMTextArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 7725959723262E7100F125D7 /* HMTextArea.h */; };
+		772595B023262E7200F125D7 /* HMTextFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 7725959923262E7200F125D7 /* HMTextFiled.h */; };
+		772595B123262E7200F125D7 /* HMTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 7725959A23262E7200F125D7 /* HMTextFiled.m */; };
+		7775CA20230691C200A58C4D /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7775CA1F230691C200A58C4D /* TestController.m */; };
+		77CE1B7320A53C0E003E3E4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE1B7220A53C0E003E3E4F /* AppDelegate.m */; };
+		77CE1B7620A53C0E003E3E4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE1B7520A53C0E003E3E4F /* ViewController.m */; };
+		77CE1B7E20A53C0E003E3E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CE1B7C20A53C0E003E3E4F /* LaunchScreen.storyboard */; };
+		77CE1B8120A53C0E003E3E4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE1B8020A53C0E003E3E4F /* main.m */; };
+		77CFA867234C7A9300A19866 /* UIView+HMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CFA85F234C7A9300A19866 /* UIView+HMEvent.m */; };
+		77CFA868234C7A9300A19866 /* UIView+HMAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CFA860234C7A9300A19866 /* UIView+HMAttribute.m */; };
+		77CFA869234C7A9300A19866 /* UIView+Hummer.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CFA861234C7A9300A19866 /* UIView+Hummer.h */; };
+		77CFA86A234C7A9300A19866 /* UIView+HMAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CFA862234C7A9300A19866 /* UIView+HMAttribute.h */; };
+		77CFA86D234C7A9400A19866 /* UIView+HMEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CFA865234C7A9300A19866 /* UIView+HMEvent.h */; };
+		77CFA86E234C7A9400A19866 /* UIView+Hummer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CFA866234C7A9300A19866 /* UIView+Hummer.m */; };
+		77CFA871234C7AA200A19866 /* HMView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CFA86F234C7AA200A19866 /* HMView.h */; };
+		77CFA872234C7AA200A19866 /* HMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CFA870234C7AA200A19866 /* HMView.m */; };
+		77D7B93F23419F7100BFB747 /* HMPerformance.h in Headers */ = {isa = PBXBuildFile; fileRef = 77D7B93D23419F7100BFB747 /* HMPerformance.h */; };
+		77D7B94023419F7100BFB747 /* HMPerformance.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D7B93E23419F7100BFB747 /* HMPerformance.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3917FE6321787346006B1A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77CE1B5720A53C04003E3E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77CE1B5F20A53C04003E3E4F;
+			remoteInfo = NativeJS;
+		};
+		5658B35C22D5CCAD00543169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77CE1B5720A53C04003E3E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77CE1B5F20A53C04003E3E4F;
+			remoteInfo = Hummer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0241D210F0A7A1D0C668CD79 /* Pods-HummerUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HummerUnitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HummerUnitTest/Pods-HummerUnitTest.release.xcconfig"; sourceTree = "<group>"; };
+		03A6CA48061CDB15E5328801 /* libPods-HummerUnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HummerUnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A14685D22BB756F0088B04A /* HMJSClassDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMJSClassDef.h; sourceTree = "<group>"; };
+		0A14685E22BB756F0088B04A /* HMJSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMJSObject.h; sourceTree = "<group>"; };
+		0A14685F22BB756F0088B04A /* NSObject+Hummer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Hummer.h"; sourceTree = "<group>"; };
+		0A14686022BB756F0088B04A /* HMBuiltinScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMBuiltinScript.m; sourceTree = "<group>"; };
+		0A14686122BB756F0088B04A /* HMJSContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMJSContext.m; sourceTree = "<group>"; };
+		0A14686222BB756F0088B04A /* HMGlobalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMGlobalObject.m; sourceTree = "<group>"; };
+		0A14686322BB756F0088B04A /* JSValue+Hummer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSValue+Hummer.m"; sourceTree = "<group>"; };
+		0A14686422BB756F0088B04A /* NSObject+Hummer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Hummer.m"; sourceTree = "<group>"; };
+		0A14686522BB756F0088B04A /* HMJSClassDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMJSClassDef.m; sourceTree = "<group>"; };
+		0A14686622BB756F0088B04A /* HMBuiltinScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMBuiltinScript.h; sourceTree = "<group>"; };
+		0A14686722BB756F0088B04A /* HMJSContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMJSContext.h; sourceTree = "<group>"; };
+		0A14686822BB756F0088B04A /* JSValue+Hummer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSValue+Hummer.h"; sourceTree = "<group>"; };
+		0A14686922BB756F0088B04A /* HMGlobalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMGlobalObject.h; sourceTree = "<group>"; };
+		0A14686B22BB756F0088B04A /* HMYogaConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMYogaConfig.m; sourceTree = "<group>"; };
+		0A14686C22BB756F0088B04A /* HMDomNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDomNode.h; sourceTree = "<group>"; };
+		0A14686D22BB756F0088B04A /* HMYogaConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMYogaConfig.h; sourceTree = "<group>"; };
+		0A14686E22BB756F0088B04A /* HMDomNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDomNode.m; sourceTree = "<group>"; };
+		0A14687022BB756F0088B04A /* HMAttrManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAttrManager.h; sourceTree = "<group>"; };
+		0A14687122BB756F0088B04A /* HMClassManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMClassManager.h; sourceTree = "<group>"; };
+		0A14687222BB756F0088B04A /* HMExportManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMExportManager.m; sourceTree = "<group>"; };
+		0A14687322BB756F0088B04A /* HMAttrManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAttrManager.m; sourceTree = "<group>"; };
+		0A14687422BB756F0088B04A /* HMClassManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMClassManager.m; sourceTree = "<group>"; };
+		0A14687522BB756F0088B04A /* HMExportManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMExportManager.h; sourceTree = "<group>"; };
+		0A14687722BB756F0088B04A /* HMInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMInvocation.h; sourceTree = "<group>"; };
+		0A14687822BB756F0088B04A /* HMExportMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMExportMethod.m; sourceTree = "<group>"; };
+		0A14687922BB756F0088B04A /* HMExportProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMExportProperty.m; sourceTree = "<group>"; };
+		0A14687A22BB756F0088B04A /* HMExportClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMExportClass.m; sourceTree = "<group>"; };
+		0A14687B22BB756F0088B04A /* HMInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMInvocation.m; sourceTree = "<group>"; };
+		0A14687C22BB756F0088B04A /* HMExportProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMExportProperty.h; sourceTree = "<group>"; };
+		0A14687D22BB756F0088B04A /* HMExportMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMExportMethod.h; sourceTree = "<group>"; };
+		0A14687E22BB756F0088B04A /* HMExportClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMExportClass.h; sourceTree = "<group>"; };
+		0A14688022BB756F0088B04A /* HMConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMConfigure.h; sourceTree = "<group>"; };
+		0A14688622BB756F0088B04A /* HMUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMUtility.h; sourceTree = "<group>"; };
+		0A14688722BB756F0088B04A /* HMConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMConverter.m; sourceTree = "<group>"; };
+		0A14688822BB756F0088B04A /* HMConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMConfigure.m; sourceTree = "<group>"; };
+		0A14688C22BB756F0088B04A /* HMConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMConverter.h; sourceTree = "<group>"; };
+		0A14688D22BB756F0088B04A /* HMUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMUtility.m; sourceTree = "<group>"; };
+		0A14689122BB756F0088B04A /* Hummer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hummer.h; sourceTree = "<group>"; };
+		0A14689222BB756F0088B04A /* Hummer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hummer.m; sourceTree = "<group>"; };
+		0A1468DD22BB756F0088B04A /* HMTapEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTapEvent.h; sourceTree = "<group>"; };
+		0A1468DE22BB756F0088B04A /* HMLongPressEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLongPressEvent.m; sourceTree = "<group>"; };
+		0A1468DF22BB756F0088B04A /* HMPanEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPanEvent.m; sourceTree = "<group>"; };
+		0A1468E022BB756F0088B04A /* HMPinchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPinchEvent.m; sourceTree = "<group>"; };
+		0A1468E122BB756F0088B04A /* HMSwipeEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSwipeEvent.h; sourceTree = "<group>"; };
+		0A1468E222BB756F0088B04A /* HMPanEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPanEvent.h; sourceTree = "<group>"; };
+		0A1468E322BB756F0088B04A /* HMLongPressEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLongPressEvent.h; sourceTree = "<group>"; };
+		0A1468E422BB756F0088B04A /* HMTapEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTapEvent.m; sourceTree = "<group>"; };
+		0A1468E522BB756F0088B04A /* HMSwipeEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSwipeEvent.m; sourceTree = "<group>"; };
+		0A1468E622BB756F0088B04A /* HMPinchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPinchEvent.h; sourceTree = "<group>"; };
+		0A1468E822BB756F0088B04A /* HMScrollEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMScrollEvent.m; sourceTree = "<group>"; };
+		0A1468E922BB756F0088B04A /* HMSwitchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSwitchEvent.h; sourceTree = "<group>"; };
+		0A1468EA22BB756F0088B04A /* HMInputEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMInputEvent.m; sourceTree = "<group>"; };
+		0A1468EB22BB756F0088B04A /* HMSwitchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSwitchEvent.m; sourceTree = "<group>"; };
+		0A1468EC22BB756F0088B04A /* HMScrollEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMScrollEvent.h; sourceTree = "<group>"; };
+		0A1468ED22BB756F0088B04A /* HMInputEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMInputEvent.h; sourceTree = "<group>"; };
+		0A1468EF22BB756F0088B04A /* HMBaseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMBaseEvent.m; sourceTree = "<group>"; };
+		0A1468F022BB756F0088B04A /* HMBaseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMBaseEvent.h; sourceTree = "<group>"; };
+		0A1468F222BB756F0088B04A /* HMNetworkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNetworkProtocol.h; sourceTree = "<group>"; };
+		0A1468F322BB756F0088B04A /* HMInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMInterceptor.m; sourceTree = "<group>"; };
+		0A1468F422BB756F0088B04A /* HMReporterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMReporterProtocol.h; sourceTree = "<group>"; };
+		0A1468F622BB756F0088B04A /* HMWebImageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMWebImageProtocol.h; sourceTree = "<group>"; };
+		0A1468F722BB756F0088B04A /* HMInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMInterceptor.h; sourceTree = "<group>"; };
+		0AA9D12722BB723F00FA9ADE /* libPods-HummerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-HummerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C07EFF5E9DBCAB8787AC3AD /* Pods-HummerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HummerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HummerTests/Pods-HummerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3917FE6121786F94006B1A1E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		39820A7D22855B9E00B0623E /* LogInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInterceptor.h; sourceTree = "<group>"; };
+		39820A7E22855B9E00B0623E /* LogInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInterceptor.m; sourceTree = "<group>"; };
+		3B99E63E92DC15F317060715 /* Pods-HummerUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HummerUnitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HummerUnitTest/Pods-HummerUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4645E941E7CCB3E81FFE751C /* Pods-Hummer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hummer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hummer/Pods-Hummer.release.xcconfig"; sourceTree = "<group>"; };
+		4B068F428347489D7FFFD5C2 /* Pods-HummerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HummerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HummerTest/Pods-HummerTest.release.xcconfig"; sourceTree = "<group>"; };
+		5658B35622D5CCAD00543169 /* HummerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HummerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5658B35822D5CCAD00543169 /* HummerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HummerTests.m; sourceTree = "<group>"; };
+		5658B35A22D5CCAD00543169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5658B36122D5CF5100543169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5665A61322DC29EE003A50FA /* HMConverterTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMConverterTest.m; sourceTree = "<group>"; };
+		726007D33BA703BF1C939D78 /* Pods-Hummer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hummer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hummer/Pods-Hummer.debug.xcconfig"; sourceTree = "<group>"; };
+		7725958723262B7400F125D7 /* CommonDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefines.h; sourceTree = "<group>"; };
+		7725958A23262E7100F125D7 /* HMSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSwitch.m; sourceTree = "<group>"; };
+		7725958B23262E7100F125D7 /* HMSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSwitch.h; sourceTree = "<group>"; };
+		7725958D23262E7100F125D7 /* HMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLabel.h; sourceTree = "<group>"; };
+		7725958E23262E7100F125D7 /* HMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLabel.m; sourceTree = "<group>"; };
+		7725959023262E7100F125D7 /* HMImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMImageView.m; sourceTree = "<group>"; };
+		7725959123262E7100F125D7 /* HMImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMImageView.h; sourceTree = "<group>"; };
+		7725959323262E7100F125D7 /* HMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMButton.m; sourceTree = "<group>"; };
+		7725959423262E7100F125D7 /* HMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMButton.h; sourceTree = "<group>"; };
+		7725959623262E7100F125D7 /* HMTextArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTextArea.m; sourceTree = "<group>"; };
+		7725959723262E7100F125D7 /* HMTextArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTextArea.h; sourceTree = "<group>"; };
+		7725959923262E7200F125D7 /* HMTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTextFiled.h; sourceTree = "<group>"; };
+		7725959A23262E7200F125D7 /* HMTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTextFiled.m; sourceTree = "<group>"; };
+		7775CA1E230691C200A58C4D /* TestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestController.h; sourceTree = "<group>"; };
+		7775CA1F230691C200A58C4D /* TestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestController.m; sourceTree = "<group>"; };
+		77A098472160BB0C00D3D812 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		77CE1B6020A53C04003E3E4F /* Hummer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hummer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CE1B6F20A53C0E003E3E4F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CE1B7120A53C0E003E3E4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77CE1B7220A53C0E003E3E4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77CE1B7420A53C0E003E3E4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		77CE1B7520A53C0E003E3E4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		77CE1B7D20A53C0E003E3E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77CE1B7F20A53C0E003E3E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77CE1B8020A53C0E003E3E4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77CFA85F234C7A9300A19866 /* UIView+HMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HMEvent.m"; sourceTree = "<group>"; };
+		77CFA860234C7A9300A19866 /* UIView+HMAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HMAttribute.m"; sourceTree = "<group>"; };
+		77CFA861234C7A9300A19866 /* UIView+Hummer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hummer.h"; sourceTree = "<group>"; };
+		77CFA862234C7A9300A19866 /* UIView+HMAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HMAttribute.h"; sourceTree = "<group>"; };
+		77CFA865234C7A9300A19866 /* UIView+HMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HMEvent.h"; sourceTree = "<group>"; };
+		77CFA866234C7A9300A19866 /* UIView+Hummer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hummer.m"; sourceTree = "<group>"; };
+		77CFA86F234C7AA200A19866 /* HMView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMView.h; sourceTree = "<group>"; };
+		77CFA870234C7AA200A19866 /* HMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMView.m; sourceTree = "<group>"; };
+		77D7B93D23419F7100BFB747 /* HMPerformance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMPerformance.h; sourceTree = "<group>"; };
+		77D7B93E23419F7100BFB747 /* HMPerformance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMPerformance.m; sourceTree = "<group>"; };
+		8FECCE6A6CACCC9AF37B21A9 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		AC30704FE1E3D2169F4A94F5 /* Pods-HummerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HummerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HummerTests/Pods-HummerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B14A0A00505EB64D6680035E /* Pods-HummerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HummerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HummerTest/Pods-HummerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3FD730A1FAD574225209E5 /* libPods-Hummer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hummer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98A2D19AAE878FC333AB4C9 /* libPods-HummerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HummerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE306C187D67E86479303F69 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		D7D29B73332DFC90916DF0D1 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09126EA6D5D6A35D02850E1 /* libPods-HummerTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HummerTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5658B35322D5CCAD00543169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5665A61222DC27FD003A50FA /* libc++.tbd in Frameworks */,
+				5658B35B22D5CCAD00543169 /* Hummer.framework in Frameworks */,
+				5F0BAB59ECEC708F30F791D9 /* libPods-HummerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CE1B5C20A53C04003E3E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49226D666C14B8DEBD189978 /* libPods-Hummer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CE1B6C20A53C0E003E3E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FF84A2217DF04B005646E0 /* libc++.tbd in Frameworks */,
+				3917FE652178734D006B1A1E /* Hummer.framework in Frameworks */,
+				51F0375C7CEE9B943148E7B5 /* libPods-Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A14685A22BB756F0088B04A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A14685B22BB756F0088B04A /* Core */,
+				0A14689022BB756F0088B04A /* Entry */,
+				0A14689322BB756F0088B04A /* Component */,
+				0A1468DB22BB756F0088B04A /* Event */,
+				0A1468F122BB756F0088B04A /* Interceptor */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0A14685B22BB756F0088B04A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A14685C22BB756F0088B04A /* Bridge */,
+				0A14686A22BB756F0088B04A /* Layout */,
+				0A14686F22BB756F0088B04A /* Manager */,
+				0A14687622BB756F0088B04A /* Base */,
+				0A14687F22BB756F0088B04A /* Utility */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0A14685C22BB756F0088B04A /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				0A14686622BB756F0088B04A /* HMBuiltinScript.h */,
+				0A14686022BB756F0088B04A /* HMBuiltinScript.m */,
+				0A14685D22BB756F0088B04A /* HMJSClassDef.h */,
+				0A14686522BB756F0088B04A /* HMJSClassDef.m */,
+				0A14686722BB756F0088B04A /* HMJSContext.h */,
+				0A14686122BB756F0088B04A /* HMJSContext.m */,
+				0A14686922BB756F0088B04A /* HMGlobalObject.h */,
+				0A14686222BB756F0088B04A /* HMGlobalObject.m */,
+				0A14685E22BB756F0088B04A /* HMJSObject.h */,
+				0A14686822BB756F0088B04A /* JSValue+Hummer.h */,
+				0A14686322BB756F0088B04A /* JSValue+Hummer.m */,
+				0A14685F22BB756F0088B04A /* NSObject+Hummer.h */,
+				0A14686422BB756F0088B04A /* NSObject+Hummer.m */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		0A14686A22BB756F0088B04A /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				0A14686C22BB756F0088B04A /* HMDomNode.h */,
+				0A14686E22BB756F0088B04A /* HMDomNode.m */,
+				0A14686D22BB756F0088B04A /* HMYogaConfig.h */,
+				0A14686B22BB756F0088B04A /* HMYogaConfig.m */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		0A14686F22BB756F0088B04A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0A14687022BB756F0088B04A /* HMAttrManager.h */,
+				0A14687322BB756F0088B04A /* HMAttrManager.m */,
+				0A14687122BB756F0088B04A /* HMClassManager.h */,
+				0A14687422BB756F0088B04A /* HMClassManager.m */,
+				0A14687522BB756F0088B04A /* HMExportManager.h */,
+				0A14687222BB756F0088B04A /* HMExportManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0A14687622BB756F0088B04A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0A14687E22BB756F0088B04A /* HMExportClass.h */,
+				0A14687A22BB756F0088B04A /* HMExportClass.m */,
+				0A14687D22BB756F0088B04A /* HMExportMethod.h */,
+				0A14687822BB756F0088B04A /* HMExportMethod.m */,
+				0A14687C22BB756F0088B04A /* HMExportProperty.h */,
+				0A14687922BB756F0088B04A /* HMExportProperty.m */,
+				0A14687722BB756F0088B04A /* HMInvocation.h */,
+				0A14687B22BB756F0088B04A /* HMInvocation.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0A14687F22BB756F0088B04A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0A14688022BB756F0088B04A /* HMConfigure.h */,
+				0A14688822BB756F0088B04A /* HMConfigure.m */,
+				0A14688C22BB756F0088B04A /* HMConverter.h */,
+				0A14688722BB756F0088B04A /* HMConverter.m */,
+				0A14688622BB756F0088B04A /* HMUtility.h */,
+				0A14688D22BB756F0088B04A /* HMUtility.m */,
+				77D7B93D23419F7100BFB747 /* HMPerformance.h */,
+				77D7B93E23419F7100BFB747 /* HMPerformance.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0A14689022BB756F0088B04A /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				0A14689122BB756F0088B04A /* Hummer.h */,
+				0A14689222BB756F0088B04A /* Hummer.m */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		0A14689322BB756F0088B04A /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				77CFA84E234C7A8700A19866 /* Base */,
+				7725959223262E7100F125D7 /* Button */,
+				7725958F23262E7100F125D7 /* Image */,
+				7725959823262E7200F125D7 /* Input */,
+				7725958C23262E7100F125D7 /* Label */,
+				7725958923262E7100F125D7 /* Switch */,
+				7725959523262E7100F125D7 /* TextArea */,
+				7725959B23262E7200F125D7 /* View */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0A1468DB22BB756F0088B04A /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				0A1468DC22BB756F0088B04A /* Gesture */,
+				0A1468E722BB756F0088B04A /* View */,
+				0A1468EE22BB756F0088B04A /* Base */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		0A1468DC22BB756F0088B04A /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				0A1468E322BB756F0088B04A /* HMLongPressEvent.h */,
+				0A1468DE22BB756F0088B04A /* HMLongPressEvent.m */,
+				0A1468E222BB756F0088B04A /* HMPanEvent.h */,
+				0A1468DF22BB756F0088B04A /* HMPanEvent.m */,
+				0A1468E622BB756F0088B04A /* HMPinchEvent.h */,
+				0A1468E022BB756F0088B04A /* HMPinchEvent.m */,
+				0A1468E122BB756F0088B04A /* HMSwipeEvent.h */,
+				0A1468E522BB756F0088B04A /* HMSwipeEvent.m */,
+				0A1468DD22BB756F0088B04A /* HMTapEvent.h */,
+				0A1468E422BB756F0088B04A /* HMTapEvent.m */,
+			);
+			path = Gesture;
+			sourceTree = "<group>";
+		};
+		0A1468E722BB756F0088B04A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A1468ED22BB756F0088B04A /* HMInputEvent.h */,
+				0A1468EA22BB756F0088B04A /* HMInputEvent.m */,
+				0A1468EC22BB756F0088B04A /* HMScrollEvent.h */,
+				0A1468E822BB756F0088B04A /* HMScrollEvent.m */,
+				0A1468E922BB756F0088B04A /* HMSwitchEvent.h */,
+				0A1468EB22BB756F0088B04A /* HMSwitchEvent.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A1468EE22BB756F0088B04A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0A1468EF22BB756F0088B04A /* HMBaseEvent.m */,
+				0A1468F022BB756F0088B04A /* HMBaseEvent.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0A1468F122BB756F0088B04A /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				0A1468F722BB756F0088B04A /* HMInterceptor.h */,
+				0A1468F322BB756F0088B04A /* HMInterceptor.m */,
+				0A1468F222BB756F0088B04A /* HMNetworkProtocol.h */,
+				0A1468F422BB756F0088B04A /* HMReporterProtocol.h */,
+				0A1468F622BB756F0088B04A /* HMWebImageProtocol.h */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		5658B35722D5CCAD00543169 /* HummerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5658B35822D5CCAD00543169 /* HummerTests.m */,
+				5658B35A22D5CCAD00543169 /* Info.plist */,
+				5665A61322DC29EE003A50FA /* HMConverterTest.m */,
+			);
+			path = HummerTests;
+			sourceTree = "<group>";
+		};
+		74C35BB6E8169492086D84ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				726007D33BA703BF1C939D78 /* Pods-Hummer.debug.xcconfig */,
+				4645E941E7CCB3E81FFE751C /* Pods-Hummer.release.xcconfig */,
+				B14A0A00505EB64D6680035E /* Pods-HummerTest.debug.xcconfig */,
+				4B068F428347489D7FFFD5C2 /* Pods-HummerTest.release.xcconfig */,
+				AC30704FE1E3D2169F4A94F5 /* Pods-HummerTests.debug.xcconfig */,
+				1C07EFF5E9DBCAB8787AC3AD /* Pods-HummerTests.release.xcconfig */,
+				3B99E63E92DC15F317060715 /* Pods-HummerUnitTest.debug.xcconfig */,
+				0241D210F0A7A1D0C668CD79 /* Pods-HummerUnitTest.release.xcconfig */,
+				8FECCE6A6CACCC9AF37B21A9 /* Pods-Demo.debug.xcconfig */,
+				CE306C187D67E86479303F69 /* Pods-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7725958923262E7100F125D7 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				7725958A23262E7100F125D7 /* HMSwitch.m */,
+				7725958B23262E7100F125D7 /* HMSwitch.h */,
+			);
+			path = Switch;
+			sourceTree = "<group>";
+		};
+		7725958C23262E7100F125D7 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				7725958D23262E7100F125D7 /* HMLabel.h */,
+				7725958E23262E7100F125D7 /* HMLabel.m */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		7725958F23262E7100F125D7 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				7725959023262E7100F125D7 /* HMImageView.m */,
+				7725959123262E7100F125D7 /* HMImageView.h */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		7725959223262E7100F125D7 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				7725959323262E7100F125D7 /* HMButton.m */,
+				7725959423262E7100F125D7 /* HMButton.h */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		7725959523262E7100F125D7 /* TextArea */ = {
+			isa = PBXGroup;
+			children = (
+				7725959723262E7100F125D7 /* HMTextArea.h */,
+				7725959623262E7100F125D7 /* HMTextArea.m */,
+			);
+			path = TextArea;
+			sourceTree = "<group>";
+		};
+		7725959823262E7200F125D7 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				7725959923262E7200F125D7 /* HMTextFiled.h */,
+				7725959A23262E7200F125D7 /* HMTextFiled.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		7725959B23262E7200F125D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77CFA86F234C7AA200A19866 /* HMView.h */,
+				77CFA870234C7AA200A19866 /* HMView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77CE1B5620A53C04003E3E4F = {
+			isa = PBXGroup;
+			children = (
+				77CE1B6220A53C04003E3E4F /* Hummer */,
+				77CE1B7020A53C0E003E3E4F /* Demo */,
+				5658B35722D5CCAD00543169 /* HummerTests */,
+				77CE1B6120A53C04003E3E4F /* Products */,
+				77CE1B8720A53C48003E3E4F /* Frameworks */,
+				74C35BB6E8169492086D84ED /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		77CE1B6120A53C04003E3E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77CE1B6020A53C04003E3E4F /* Hummer.framework */,
+				77CE1B6F20A53C0E003E3E4F /* Demo.app */,
+				5658B35622D5CCAD00543169 /* HummerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77CE1B6220A53C04003E3E4F /* Hummer */ = {
+			isa = PBXGroup;
+			children = (
+				0A14685A22BB756F0088B04A /* Classes */,
+				3917FE6121786F94006B1A1E /* Info.plist */,
+			);
+			path = Hummer;
+			sourceTree = "<group>";
+		};
+		77CE1B7020A53C0E003E3E4F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5658B36122D5CF5100543169 /* Assets.xcassets */,
+				39820A7D22855B9E00B0623E /* LogInterceptor.h */,
+				39820A7E22855B9E00B0623E /* LogInterceptor.m */,
+				77CE1B7120A53C0E003E3E4F /* AppDelegate.h */,
+				77CE1B7220A53C0E003E3E4F /* AppDelegate.m */,
+				77CE1B7420A53C0E003E3E4F /* ViewController.h */,
+				77CE1B7520A53C0E003E3E4F /* ViewController.m */,
+				7775CA1E230691C200A58C4D /* TestController.h */,
+				7775CA1F230691C200A58C4D /* TestController.m */,
+				7725958723262B7400F125D7 /* CommonDefines.h */,
+				77CE1B7C20A53C0E003E3E4F /* LaunchScreen.storyboard */,
+				77CE1B7F20A53C0E003E3E4F /* Info.plist */,
+				77CE1B8020A53C0E003E3E4F /* main.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		77CE1B8720A53C48003E3E4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AA9D12722BB723F00FA9ADE /* libPods-HummerTests.a */,
+				77A098472160BB0C00D3D812 /* libc++.tbd */,
+				BF3FD730A1FAD574225209E5 /* libPods-Hummer.a */,
+				F09126EA6D5D6A35D02850E1 /* libPods-HummerTest.a */,
+				C98A2D19AAE878FC333AB4C9 /* libPods-HummerTests.a */,
+				03A6CA48061CDB15E5328801 /* libPods-HummerUnitTest.a */,
+				D7D29B73332DFC90916DF0D1 /* libPods-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77CFA84E234C7A8700A19866 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				77CFA862234C7A9300A19866 /* UIView+HMAttribute.h */,
+				77CFA860234C7A9300A19866 /* UIView+HMAttribute.m */,
+				77CFA865234C7A9300A19866 /* UIView+HMEvent.h */,
+				77CFA85F234C7A9300A19866 /* UIView+HMEvent.m */,
+				77CFA861234C7A9300A19866 /* UIView+Hummer.h */,
+				77CFA866234C7A9300A19866 /* UIView+Hummer.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		77CE1B5D20A53C04003E3E4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A14692722BB756F0088B04A /* Hummer.h in Headers */,
+				0A14691722BB756F0088B04A /* HMConfigure.h in Headers */,
+				0A14696822BB756F0088B04A /* HMPinchEvent.h in Headers */,
+				0A1468F922BB756F0088B04A /* HMJSObject.h in Headers */,
+				77CFA871234C7AA200A19866 /* HMView.h in Headers */,
+				0A14690322BB756F0088B04A /* JSValue+Hummer.h in Headers */,
+				0A14690A22BB756F0088B04A /* HMClassManager.h in Headers */,
+				0A14690222BB756F0088B04A /* HMJSContext.h in Headers */,
+				0A14691D22BB756F0088B04A /* HMUtility.h in Headers */,
+				772595AD23262E7200F125D7 /* HMButton.h in Headers */,
+				0A1468FA22BB756F0088B04A /* NSObject+Hummer.h in Headers */,
+				0A14696422BB756F0088B04A /* HMPanEvent.h in Headers */,
+				772595AF23262E7200F125D7 /* HMTextArea.h in Headers */,
+				0A14696322BB756F0088B04A /* HMSwipeEvent.h in Headers */,
+				0A14696A22BB756F0088B04A /* HMSwitchEvent.h in Headers */,
+				772595A823262E7200F125D7 /* HMLabel.h in Headers */,
+				0A14690622BB756F0088B04A /* HMDomNode.h in Headers */,
+				0A14695F22BB756F0088B04A /* HMTapEvent.h in Headers */,
+				0A14696D22BB756F0088B04A /* HMScrollEvent.h in Headers */,
+				0A14697022BB756F0088B04A /* HMBaseEvent.h in Headers */,
+				0A14690922BB756F0088B04A /* HMAttrManager.h in Headers */,
+				0A14690422BB756F0088B04A /* HMGlobalObject.h in Headers */,
+				0A14697322BB756F0088B04A /* HMReporterProtocol.h in Headers */,
+				772595A723262E7200F125D7 /* HMSwitch.h in Headers */,
+				77CFA86A234C7A9300A19866 /* UIView+HMAttribute.h in Headers */,
+				0A14690722BB756F0088B04A /* HMYogaConfig.h in Headers */,
+				0A14697122BB756F0088B04A /* HMNetworkProtocol.h in Headers */,
+				77CFA869234C7A9300A19866 /* UIView+Hummer.h in Headers */,
+				0A14690E22BB756F0088B04A /* HMExportManager.h in Headers */,
+				772595B023262E7200F125D7 /* HMTextFiled.h in Headers */,
+				0A14690122BB756F0088B04A /* HMBuiltinScript.h in Headers */,
+				0A14692322BB756F0088B04A /* HMConverter.h in Headers */,
+				0A14697622BB756F0088B04A /* HMInterceptor.h in Headers */,
+				0A1468F822BB756F0088B04A /* HMJSClassDef.h in Headers */,
+				0A14697522BB756F0088B04A /* HMWebImageProtocol.h in Headers */,
+				0A14690F22BB756F0088B04A /* HMInvocation.h in Headers */,
+				0A14696E22BB756F0088B04A /* HMInputEvent.h in Headers */,
+				0A14691622BB756F0088B04A /* HMExportClass.h in Headers */,
+				0A14696522BB756F0088B04A /* HMLongPressEvent.h in Headers */,
+				0A14691522BB756F0088B04A /* HMExportMethod.h in Headers */,
+				77D7B93F23419F7100BFB747 /* HMPerformance.h in Headers */,
+				77CFA86D234C7A9400A19866 /* UIView+HMEvent.h in Headers */,
+				772595AB23262E7200F125D7 /* HMImageView.h in Headers */,
+				0A14691422BB756F0088B04A /* HMExportProperty.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5658B35522D5CCAD00543169 /* HummerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5658B35E22D5CCAD00543169 /* Build configuration list for PBXNativeTarget "HummerTests" */;
+			buildPhases = (
+				3141DDF5D1AE676CF07408F5 /* [CP] Check Pods Manifest.lock */,
+				5658B35222D5CCAD00543169 /* Sources */,
+				5658B35322D5CCAD00543169 /* Frameworks */,
+				5658B35422D5CCAD00543169 /* Resources */,
+				04BD621599C66A8612EC5499 /* [CP] Embed Pods Frameworks */,
+				9E924819C1414082E8BB2FEA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5658B35D22D5CCAD00543169 /* PBXTargetDependency */,
+			);
+			name = HummerTests;
+			productName = HummerTests;
+			productReference = 5658B35622D5CCAD00543169 /* HummerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77CE1B5F20A53C04003E3E4F /* Hummer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CE1B6820A53C04003E3E4F /* Build configuration list for PBXNativeTarget "Hummer" */;
+			buildPhases = (
+				D72F7894D243D00195819D66 /* [CP] Check Pods Manifest.lock */,
+				77CE1B5B20A53C04003E3E4F /* Sources */,
+				77CE1B5C20A53C04003E3E4F /* Frameworks */,
+				77CE1B5D20A53C04003E3E4F /* Headers */,
+				77CE1B5E20A53C04003E3E4F /* Resources */,
+				D08482B8A9B85CB29D23EA75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hummer;
+			productName = NativeJS;
+			productReference = 77CE1B6020A53C04003E3E4F /* Hummer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77CE1B6E20A53C0E003E3E4F /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77CE1B8220A53C0E003E3E4F /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				EACD565A59700B40C3FBFF41 /* [CP] Check Pods Manifest.lock */,
+				77CE1B6B20A53C0E003E3E4F /* Sources */,
+				77CE1B6C20A53C0E003E3E4F /* Frameworks */,
+				77CE1B6D20A53C0E003E3E4F /* Resources */,
+				4B71EAE7AF79BA1832FB985B /* [CP] Embed Pods Frameworks */,
+				1D7F4422958D02A03EE3031B /* [CP] Copy Pods Resources */,
+				7725958823262C2600F125D7 /* Set Local IP Address */,
+				7775CA1C23065D3800A58C4D /*  Setup Debug Service */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3917FE6421787346006B1A1E /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 77CE1B6F20A53C0E003E3E4F /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77CE1B5720A53C04003E3E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = didi;
+				TargetAttributes = {
+					5658B35522D5CCAD00543169 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					77CE1B5F20A53C04003E3E4F = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					77CE1B6E20A53C0E003E3E4F = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 77CE1B5A20A53C04003E3E4F /* Build configuration list for PBXProject "Hummer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77CE1B5620A53C04003E3E4F;
+			productRefGroup = 77CE1B6120A53C04003E3E4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77CE1B5F20A53C04003E3E4F /* Hummer */,
+				77CE1B6E20A53C0E003E3E4F /* Demo */,
+				5658B35522D5CCAD00543169 /* HummerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5658B35422D5CCAD00543169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CE1B5E20A53C04003E3E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CE1B6D20A53C0E003E3E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5658B36222D5CF5100543169 /* Assets.xcassets in Resources */,
+				77CE1B7E20A53C0E003E3E4F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04BD621599C66A8612EC5499 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HummerTests/Pods-HummerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D7F4422958D02A03EE3031B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3141DDF5D1AE676CF07408F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HummerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B71EAE7AF79BA1832FB985B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7725958823262C2600F125D7 /* Set Local IP Address */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Local IP Address";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nIP_ADDRESS=`ipconfig getifaddr en0`\nif [ -f ${INFOPLIST_FILE} ]; then\n/usr/libexec/PlistBuddy -c \"Set :LOCAL_IPADDR ${IP_ADDRESS}\" ${INFOPLIST_FILE}\nfi\n";
+		};
+		7775CA1C23065D3800A58C4D /*  Setup Debug Service */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = " Setup Debug Service";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "lsof -Pn -i4 | grep 9292 > /dev/null\nif [ $? -ne 0 ]; then\n    echo \"---Debug server is starting---\"\n    open -a Terminal \"./Script/start\"\n    echo \"---Debug server has stoped---\"\nfi\n";
+		};
+		9E924819C1414082E8BB2FEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HummerTests/Pods-HummerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D08482B8A9B85CB29D23EA75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hummer/Pods-Hummer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D72F7894D243D00195819D66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hummer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EACD565A59700B40C3FBFF41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5658B35222D5CCAD00543169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5658B35922D5CCAD00543169 /* HummerTests.m in Sources */,
+				5665A61422DC29EE003A50FA /* HMConverterTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CE1B5B20A53C04003E3E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A14696922BB756F0088B04A /* HMScrollEvent.m in Sources */,
+				77D7B94023419F7100BFB747 /* HMPerformance.m in Sources */,
+				0A14696B22BB756F0088B04A /* HMInputEvent.m in Sources */,
+				77CFA867234C7A9300A19866 /* UIView+HMEvent.m in Sources */,
+				772595B123262E7200F125D7 /* HMTextFiled.m in Sources */,
+				772595AA23262E7200F125D7 /* HMImageView.m in Sources */,
+				772595A623262E7200F125D7 /* HMSwitch.m in Sources */,
+				0A14696022BB756F0088B04A /* HMLongPressEvent.m in Sources */,
+				0A14692822BB756F0088B04A /* Hummer.m in Sources */,
+				0A14690022BB756F0088B04A /* HMJSClassDef.m in Sources */,
+				0A14692422BB756F0088B04A /* HMUtility.m in Sources */,
+				0A14696C22BB756F0088B04A /* HMSwitchEvent.m in Sources */,
+				0A14690B22BB756F0088B04A /* HMExportManager.m in Sources */,
+				0A14690822BB756F0088B04A /* HMDomNode.m in Sources */,
+				0A1468FD22BB756F0088B04A /* HMGlobalObject.m in Sources */,
+				0A14696622BB756F0088B04A /* HMTapEvent.m in Sources */,
+				77CFA868234C7A9300A19866 /* UIView+HMAttribute.m in Sources */,
+				772595A923262E7200F125D7 /* HMLabel.m in Sources */,
+				77CFA872234C7AA200A19866 /* HMView.m in Sources */,
+				0A14696222BB756F0088B04A /* HMPinchEvent.m in Sources */,
+				0A1468FF22BB756F0088B04A /* NSObject+Hummer.m in Sources */,
+				0A14697222BB756F0088B04A /* HMInterceptor.m in Sources */,
+				0A14696722BB756F0088B04A /* HMSwipeEvent.m in Sources */,
+				0A14691F22BB756F0088B04A /* HMConfigure.m in Sources */,
+				0A14690C22BB756F0088B04A /* HMAttrManager.m in Sources */,
+				0A14696122BB756F0088B04A /* HMPanEvent.m in Sources */,
+				0A1468FB22BB756F0088B04A /* HMBuiltinScript.m in Sources */,
+				0A14690522BB756F0088B04A /* HMYogaConfig.m in Sources */,
+				0A1468FE22BB756F0088B04A /* JSValue+Hummer.m in Sources */,
+				77CFA86E234C7A9400A19866 /* UIView+Hummer.m in Sources */,
+				0A14691E22BB756F0088B04A /* HMConverter.m in Sources */,
+				0A14696F22BB756F0088B04A /* HMBaseEvent.m in Sources */,
+				772595AE23262E7200F125D7 /* HMTextArea.m in Sources */,
+				0A1468FC22BB756F0088B04A /* HMJSContext.m in Sources */,
+				772595AC23262E7200F125D7 /* HMButton.m in Sources */,
+				0A14691122BB756F0088B04A /* HMExportProperty.m in Sources */,
+				0A14691322BB756F0088B04A /* HMInvocation.m in Sources */,
+				0A14691222BB756F0088B04A /* HMExportClass.m in Sources */,
+				0A14690D22BB756F0088B04A /* HMClassManager.m in Sources */,
+				0A14691022BB756F0088B04A /* HMExportMethod.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77CE1B6B20A53C0E003E3E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CE1B7620A53C0E003E3E4F /* ViewController.m in Sources */,
+				77CE1B8120A53C0E003E3E4F /* main.m in Sources */,
+				77CE1B7320A53C0E003E3E4F /* AppDelegate.m in Sources */,
+				39820A7F22855B9E00B0623E /* LogInterceptor.m in Sources */,
+				7775CA20230691C200A58C4D /* TestController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3917FE6421787346006B1A1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77CE1B5F20A53C04003E3E4F /* Hummer */;
+			targetProxy = 3917FE6321787346006B1A1E /* PBXContainerItemProxy */;
+		};
+		5658B35D22D5CCAD00543169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77CE1B5F20A53C04003E3E4F /* Hummer */;
+			targetProxy = 5658B35C22D5CCAD00543169 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77CE1B7C20A53C0E003E3E4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77CE1B7D20A53C0E003E3E4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5658B35F22D5CCAD00543169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC30704FE1E3D2169F4A94F5 /* Pods-HummerTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HummerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwin.HummerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5658B36022D5CCAD00543169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C07EFF5E9DBCAB8787AC3AD /* Pods-HummerTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HummerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwin.HummerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77CE1B6620A53C04003E3E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77CE1B6720A53C04003E3E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77CE1B6920A53C04003E3E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726007D33BA703BF1C939D78 /* Pods-Hummer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUNY3FETLB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = Hummer/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangjy.hummer;
+				PRODUCT_NAME = Hummer;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		77CE1B6A20A53C04003E3E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4645E941E7CCB3E81FFE751C /* Pods-Hummer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUNY3FETLB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = Hummer/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangjy.hummer;
+				PRODUCT_NAME = Hummer;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		77CE1B8320A53C0E003E3E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FECCE6A6CACCC9AF37B21A9 /* Pods-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUNY3FETLB;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangjy.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77CE1B8420A53C0E003E3E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE306C187D67E86479303F69 /* Pods-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUNY3FETLB;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangjy.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5658B35E22D5CCAD00543169 /* Build configuration list for PBXNativeTarget "HummerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5658B35F22D5CCAD00543169 /* Debug */,
+				5658B36022D5CCAD00543169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77CE1B5A20A53C04003E3E4F /* Build configuration list for PBXProject "Hummer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77CE1B6620A53C04003E3E4F /* Debug */,
+				77CE1B6720A53C04003E3E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77CE1B6820A53C04003E3E4F /* Build configuration list for PBXNativeTarget "Hummer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77CE1B6920A53C04003E3E4F /* Debug */,
+				77CE1B6A20A53C04003E3E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77CE1B8220A53C0E003E3E4F /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77CE1B8320A53C0E003E3E4F /* Debug */,
+				77CE1B8420A53C0E003E3E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77CE1B5720A53C04003E3E4F /* Project object */;
+}
