@@ -28,7 +28,7 @@ JS_EXPORT void JSSynchronousGarbageCollectForDebugging(JSContextRef ctx);
 #endif
 
 @interface HMJSContext()
-@property (nonatomic, strong) NSMutableArray <JSValue *> *ownedJSValues;
+@property (nonatomic, strong) NSMutableArray <JSManagedValue *> *ownedJSValues;
 @end
 
 @implementation HMJSContext
@@ -160,16 +160,20 @@ JS_EXPORT void JSSynchronousGarbageCollectForDebugging(JSContextRef ctx);
 }
 
 - (void)retainedValue:(JSValue *)value {
-    if (value && ![self.ownedJSValues containsObject:value]) {
-        [self.ownedJSValues addObject:value];
+    if (value) {
+        JSManagedValue *managedValue = [JSManagedValue managedValueWithValue:value];
+        [self.virtualMachine addManagedReference:managedValue withOwner:self];
+        [self.ownedJSValues addObject:managedValue];
     }
 }
 
 - (void)releaseAllValues {
     @autoreleasepool {
-        NSArray *allValues = self.ownedJSValues.copy;
+        NSArray<JSManagedValue *> *allValues = self.ownedJSValues.copy;
         for (NSInteger index = 0; index < allValues.count; index++) {
-            [[allValues[index] toObjCObject] callJSFinalize];
+            JSValue *value = [allValues[index] value];
+            [[value toObjCObject] callJSFinalize];
+            [self.virtualMachine removeManagedReference:allValues[index] withOwner:self];
         }
         [self.ownedJSValues removeAllObjects];
     }
